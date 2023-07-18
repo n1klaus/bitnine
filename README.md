@@ -1,7 +1,16 @@
-# Prerequisites - Installing GCC
+# Prerequisites
 ``` c
+# Installing GCC
 sudo apt update
 sudo apt install build-essential
+
+# Installing Betty Style
+git clone https://github.com/alx-tools/Betty.git
+cd Betty
+sudo ./install.sh
+
+# Installing valgrind
+sudo apt install valgrind
 ```
 
 # [ Question No. 1 ] Fibonacci sequence using dynamic programming
@@ -101,5 +110,5 @@ Solves the problem iteratively from the bottom up, starting from the base cases 
 
 ##### Testing the program
 ``` c
-gcc -Wall -Werror -Wextra --pedantic --std=gnu99 piecewise_botttom_up.c -o result && ./result
+gcc -Wall -Werror -Wextra --pedantic --std=gnu99 piecewise_bottom_up.c -o result && ./result
 ```
